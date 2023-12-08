@@ -1,0 +1,29 @@
+section {
+  overflow-x: scroll;
+  overflow-y: hidden;
+  padding: 2rem;
+  max-width: 88vw;
+  display: flex;
+  scrollbar-width: none;
+}
+section * {
+  flex-shrink: 0;
+}
+
+.slide-buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  padding: 2rem;
+  gap: 4rem;
+}
+.slide-buttons div * {
+  cursor: pointer;
+  font-weight: bolder;
+  font-size: 2rem;
+  color: gray;
+}
+.slide-buttons div *:hover {
+  color: white;
+}

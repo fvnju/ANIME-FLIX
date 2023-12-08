@@ -1,0 +1,80 @@
+.card {
+  --background: #1a1a1a;
+  background: var(--background);
+  display: inline-flex;
+  --f-color: #bcbdbd;
+}
+.card:hover {
+  box-shadow: 0px 3px 20px black;
+}
+.card:hover .three-dots {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.movieName {
+  font-weight: bolder;
+  font-size: 1.3rem;
+}
+h3 {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 0.8rem;
+}
+.description {
+  margin-top: 0.4rem;
+  color: #bcbdbd;
+}
+.card-description {
+  width: 20rem;
+  padding: 1.2rem;
+  color: var(--f-color);
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  justify-content: center;
+}
+
+.badge {
+  background: var(--f-color);
+  color: var(--background);
+  width: fit-content;
+  text-align: center;
+  border-radius: 25px;
+  box-sizing: content-box;
+  padding: 0.4rem 1rem;
+  font-weight: bolder;
+}
+.badge:hover {
+  background: #444444;
+}
+span {
+  font-size: 0.7rem;
+  padding: 0 0.4rem;
+}
+.user-rating {
+  border-radius: 999999px;
+  border: 0.15rem solid var(--f-color);
+  width: 2rem;
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 500;
+  cursor: pointer;
+  text-align: center;
+}
+
+.three-dots {
+  position: fixed;
+  text-align: right;
+  display: none;
+  cursor: pointer;
+  width: 11.25rem;
+}
+.three-dots * {
+  font-size: 1.8rem;
+  color: #afafaf;
+  overflow: hidden;
+}
